@@ -6,12 +6,6 @@ from funcoes import (
 )
 from tarefa import carregar_tarefas, salvar_tarefas_json
 
-# --- Refatoração do código principal ---
-
-# Vamos eliminar a repetição de carregar e salvar a lista.
-# A função "criar_tarefa" já lida com o salvamento, então não precisamos mexer nela.
-# Para os outros casos, podemos criar uma função auxiliar para lidar com a lógica.
-
 def gerenciar_tarefas(funcao, *args):
     """Carrega as tarefas, executa uma função de manipulação e salva.
 

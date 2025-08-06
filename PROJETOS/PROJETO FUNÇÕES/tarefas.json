@@ -2,17 +2,9 @@
     {
         "ID": 1,
         "nome": "Codar",
-        "descrição": "Codar projeto",
+        "descrição": "Terminar de codar o projeto",
         "categoria": "estudo",
         "prioridade": "alta",
-        "status concluido": false
-    },
-    {
-        "ID": 2,
-        "nome": "AAA",
-        "descrição": "aa",
-        "categoria": "aaaaaaaaaa",
-        "prioridade": "alta",
-        "status concluido": false
+        "status concluido": true
     }
 ]
