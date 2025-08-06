@@ -1,11 +1,10 @@
-import json
 from funcoes import (
-    adicionar_tarefa_lista, atualizar_tarefa, 
-    criar_tarefa, exibir_tarefas_categoria,
-    exibir_tarefas_prioridade, listar_tarefas, 
-    marcar_tarefa_concluida, menu, remover_tarefa
+    atualizar_tarefa, criar_tarefa,
+    exibir_tarefas_categoria, exibir_tarefas_prioridade,
+    listar_tarefas, marcar_tarefa_concluida,
+    menu, remover_tarefa
 )
-from tarefa import carregar_tarefas, salvar_lista_json, salvar_tarefas, PATH_ARQUIVO
+from tarefa import carregar_tarefas, salvar_tarefas_json
 
 # --- Refatoração do código principal ---
 
@@ -27,7 +26,7 @@ def gerenciar_tarefas(funcao, *args):
     funcao(lista_tarefas, *args)
     
     # Salva a lista de tarefas atualizada no arquivo.
-    salvar_lista_json(lista_tarefas)
+    salvar_tarefas_json(lista_tarefas)
 
 # O loop principal mais limpo e conciso.
 while True:
@@ -42,9 +41,11 @@ while True:
         listar_tarefas()
     
     elif choice == 2:
+        listar_tarefas() # Para o usuario escolher a tarefa que deseja
         gerenciar_tarefas(marcar_tarefa_concluida)
     
     elif choice == 3:
+        listar_tarefas() # Para o usuario escolher a tarefa que deseja
         gerenciar_tarefas(remover_tarefa)
 
     elif choice == 4:
@@ -59,6 +60,5 @@ while True:
         exibir_tarefas_categoria(lista, categoria)
     
     elif choice == 6:
+        listar_tarefas() # Para o usuario escolher a tarefa que deseja
         gerenciar_tarefas(atualizar_tarefa)
-
-    # adicionar funcionalidade de remover tarefa

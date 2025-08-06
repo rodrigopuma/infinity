@@ -42,7 +42,7 @@ def menu():
     [6] - Atualizar Tarefa""")
     
     # Solicitamos a entrada e validamos imediatamente.
-    choice = input('Qual opção você deseja: ')
+    choice = int(input('Qual opção você deseja: '))
     return validador_resposta(choice, 0, 1, 2, 3, 4, 5, 6)
 
 def renovar_ids(lista_tarefas: list):
