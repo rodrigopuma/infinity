@@ -39,18 +39,12 @@ Clone o repositório.
 
 ---
 
-Navegue até a pasta do projeto pelo terminal:
+Navegue até a pasta do projeto pelo terminal e execute o `main.py`
 
 Bash
 
 ```
-cd [caminho_para_o_projeto]
-Execute o arquivo principal:
-```
-
-Bash
-
-```
+cd "PROJETOS/PROJETO FUNÇÕES"
 python main.py
 ```
 
@@ -58,13 +52,15 @@ Um menu interativo aparecerá no terminal, e você poderá escolher a opção de
 
 ## Estrutura do Projeto
 
-O projeto é dividido em três arquivos principais:
+O projeto é dividido em três arquivos principais e um arquivo **`.json`** para armazenamento:
 
-- main.py: O arquivo principal que contém o `menu interativo` e a `lógica central` do programa.
+- **`main.py`**: O arquivo principal que contém o `menu interativo` e a `lógica central` do programa.
 
-- funcoes.py: Módulo que agrupa todas as funções de manipulação das tarefas, como `criar`, `remover`, `atualizar` e `exibir`.
+- **`funcoes.py`**: Módulo que agrupa todas as funções de manipulação das tarefas, como `criar`, `remover`, `atualizar` e `exibir`.
 
-- tarefa.py: Módulo responsável pela leitura e escrita do arquivo tarefas.json, garantindo que as tarefas sejam salvas e carregadas de forma persistente.
+- **`tarefa.py`**: Módulo responsável pela leitura e escrita do arquivo `tarefas.json`, garantindo que as tarefas sejam `salvas e carregadas` de forma persistente.
+
+- **`tarefas.json`**: Arquivo responsável pelo `armazenamento das tarefas`.
 
 ## Contribuição
 
