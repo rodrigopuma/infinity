@@ -1,0 +1,20 @@
+[
+    {
+        "id": 2579243837632,
+        "nome": "Rodrigo",
+        "funcao": "Atendente",
+        "salario": 1878.14
+    },
+    {
+        "id": 2794252314816,
+        "nome": "Alice",
+        "funcao": "Atendente",
+        "salario": 1878.14
+    },
+    {
+        "id": 2020960002176,
+        "nome": "Claudio",
+        "funcao": "Atendente",
+        "salario": 1878.14
+    }
+]
