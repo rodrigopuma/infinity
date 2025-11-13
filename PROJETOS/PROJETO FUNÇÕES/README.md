@@ -1,83 +1,54 @@
-# Gerenciador de Tarefas em Linha de Comando
+# 📋 Gerenciador de Tarefas (Python)
 
-Este é um projeto simples de gerenciamento de tarefas desenvolvido em Python. Ele permite que você organize suas tarefas diárias diretamente do terminal, com opções para criar, visualizar, atualizar, remover e filtrar tarefas.
-
----
-
-## Funcionalidades
-
-O Gerenciador de Tarefas oferece as seguintes funcionalidades:
+Um projeto simples de gerenciador de tarefas feito em Python, utilizando apenas programação funcional, arquivos JSON para armazenamento dos dados e interação via terminal.
 
 ---
 
-- Criar Tarefa: Adicione uma nova tarefa com nome, descrição, prioridade e categoria.
+## 🎯 Funcionalidades
 
-- Listar Tarefas: Visualize todas as tarefas salvas em uma lista organizada.
+- ✅ Criar tarefas com:
 
-- Marcar como Concluída: Altere o status de uma tarefa para "concluída".
+  - Nome
+  - Descrição
+  - Categoria
+  - Prioridade (`alta`, `media`, `baixa`)
+  - Status de conclusão
 
-- Remover Tarefa: Exclua uma tarefa específica da sua lista.
-
-- Filtrar por Prioridade: Exiba apenas as tarefas com prioridade "alta", "média" ou "baixa".
-
-- Filtrar por Categoria: Exiba as tarefas pertencentes a uma categoria específica (por exemplo, "trabalho", "estudo", "pessoal").
-
-- Atualizar Tarefa: Edite os detalhes de uma tarefa existente.
-
----
-
-## Como Usar
-
-### Pré-requisitos
+- ✅ Listar todas as tarefas
+- ✅ Filtrar tarefas por prioridade
+- ✅ Filtrar tarefas por categoria
+- ✅ Marcar tarefa como concluída
+- ✅ Atualizar dados da tarefa
+- ✅ Remover tarefa
+- ✅ Salvar e carregar tarefas em arquivo JSON automaticamente
 
 ---
 
-Certifique-se de que você tem o Python 3 instalado em sua máquina.
+## 🗂️ Estrutura do Projeto
 
-Executando o Projeto
-Clone o repositório.
-
----
-
-Navegue até a pasta do projeto pelo terminal e execute o `main.py`
-
-Bash
-
-```
-cd "PROJETOS/PROJETO FUNÇÕES"
-python main.py
+```bash
+gerenciador_tarefas/
+├── main.py           # Arquivo principal (menu e execução)
+├── tarefas.py        # Funções para manipular as tarefas (CRUD)
+├── arquivos.py       # Funções de salvar/carregar arquivos JSON
+├── lista_tarefa.json # Arquivo com as tarefas salvas (gerado automaticamente)
+└── README.md
 ```
 
-Um menu interativo aparecerá no terminal, e você poderá escolher a opção desejada.
+## 🎯 Funcionalidades
 
-## Estrutura do Projeto
+- ✅ Criar tarefas
+- ✅ Salvar e carregar tarefas em arquivo JSON automaticamente
 
-O projeto é dividido em três arquivos principais e um arquivo **`.json`** para armazenamento:
+- Listar todas as tarefas:
 
-- **`main.py`**: O arquivo principal que contém o `menu interativo` e a `lógica central` do programa.
+  - Puxar do arquivo Json
+  - Jogar para o Python
+  - Tratar como lista de dicionarios
+  - Devolver como lista de dicionarios ao úsuario
 
-- **`funcoes.py`**: Módulo que agrupa todas as funções de manipulação das tarefas, como `criar`, `remover`, `atualizar` e `exibir`.
-
-- **`tarefa.py`**: Módulo responsável pela leitura e escrita do arquivo `tarefas.json`, garantindo que as tarefas sejam `salvas e carregadas` de forma persistente.
-
-- **`tarefas.json`**: Arquivo responsável pelo `armazenamento das tarefas`.
-
-## Contribuição
-
-Contribuições são `bem-vindas!` Se você tiver sugestões de melhoria, novas funcionalidades ou quiser corrigir um bug, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-## Exemplo de Uso
-
-Ao executar o `main.py`, você verá algo assim:
-
-```
-Menu de Tarefas
-[0] - Criar Tarefa
-[1] - Ver todas as Tarefas
-[2] - Marcar Tarefa como concluída
-[3] - Remover Tarefa
-[4] - Filtrar por prioridade
-[5] - Filtrar por categoria
-[6] - Atualizar Tarefa
-Qual opção você deseja:
-```
+- Filtrar tarefas por prioridade
+- Filtrar tarefas por categoria
+- Marcar tarefa como concluída
+- Atualizar dados da tarefa
+- Remover tarefa
